@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Space Mono", monospace;
+}
+
+.devfinder {
+    width: 730px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header--mode {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 2.5px;
+  color: #697C9A;
+  text-transform: uppercase;
+}
+
+.searchbar {
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 24px;
+}
+
+main {
+  border-radius: 15px;
+  padding: 20px;
+}
