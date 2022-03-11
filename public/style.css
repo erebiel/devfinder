@@ -17,7 +17,8 @@ body {
 }
 
 .devfinder {
-    width: 730px;
+    max-width: 730px;
+
 }
 
 header {
@@ -27,7 +28,7 @@ header {
 }
 
 h3 {
-    font-size: 26px;
+    font-size: 1.65em;
 }
 
 .header--mode {
@@ -56,7 +57,7 @@ h3 {
   width: 100%;
   padding: 0 20px;
   font-family: "Space Mono", monospace;
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 25px;
   border: none;
   background-color: transparent;
@@ -70,7 +71,6 @@ h3 {
     background-color: #0079FF;
     color: #FFFFFF;
     font-family: "Space Mono", monospace;
-    font-size: 16px;
     border: none;
     padding: 5px 10px;
     border-radius: 10px;
@@ -79,4 +79,13 @@ h3 {
 main {
   border-radius: 15px;
   padding: 20px;
+  display: flex;
+}
+
+.user--icon {
+    border-radius: 50%;
+}
+.content--header {
+    display: flex;
+    align-items: baseline;
 }
