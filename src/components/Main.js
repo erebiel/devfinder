@@ -11,48 +11,42 @@ export default function Main(props) {
 
     return (
         <main style={styles}>
-            <div>
-                <img src="./assets/defaulticon.png" alt="The Octocat" className="user--icon"/>
+            <img src="./assets/defaulticon.png" alt="The Octocat" className="user-icon"/>
+
+            <div className="user-username">
+                <h3>The Octocat</h3>
+                <a href="#">@octocat</a>
             </div>
-            <div className="main--content">
-                <div className="content--header">
-                    <div>
-                        <h3>The Octocat</h3>
-                        <a href="#">@octocat</a>
-                        <p>This profile has no bio</p>
-                    </div>
-                    <div>Joined 25 Jan 2011</div> 
+            <div className="user-joined">Joined 25 Jan 2011</div> 
+            <div className="user-bio">This profile has no bio</div>
+            
+            <div className="user-stats">
+                <div>
+                    <p>Repos</p>
+                    <h3>8</h3>
                 </div>
-                
-                <div className="stats">
-                    <div className="stats--stat">
-                        <p>Repos</p>
-                        <p className="stats--nb">8</p>
-                    </div>
-                    <div className="stats--stat">
-                        <p>Followers</p>
-                        <p className="stats--nb">3938</p>
-                    </div>
-                    <div className="stats--stat">
-                        <p>Following</p>
-                        <p className="stats--nb">9</p>
-                    </div>
+                <div>
+                    <p>Followers</p>
+                    <h3>3938</h3>
                 </div>
-                <div className="infos">
-                    <div className="infos--info">
-                        <img src="./assets/icon-location.svg" alt="Location" /> San Francisco
-                    </div>
-                    <div className="infos--info">
-                        <img src="./assets/icon-twitter.svg" alt="Twitter" /> Not Available
-                    </div>
-                    <div className="infos--info">
-                        <img src="./assets/icon-website.svg" alt="Website" /> https://github.blog
-                    </div>
-                    <div className="infos--info">
-                        <img src="./assets/icon-company.svg" alt="Company" /> @github
-                    </div>
+                <div>
+                    <p>Following</p>
+                    <h3>9</h3>
                 </div>
             </div>
+
+            <div className="user-location">
+                <img src="./assets/icon-location.svg" alt="Location" /> San Francisco
+            </div>
+            <div className="user-twitter">
+                <img src="./assets/icon-twitter.svg" alt="Twitter" /> Not Available
+            </div>
+            <div className="user-website">
+                <img src="./assets/icon-website.svg" alt="Website" /> https://github.blog
+            </div>
+            <div className="user-comapny">
+                <img src="./assets/icon-company.svg" alt="Company" /> @github
+            </div>        
         </main>
     )
 }
